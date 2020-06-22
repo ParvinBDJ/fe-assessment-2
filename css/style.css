@@ -1,6 +1,9 @@
 body{
   background-color: #f19044;
+  cursor: none;
+  margin: 0;
 }
+
 [type=radio] { 
     position: absolute;
     opacity: 0;
@@ -110,4 +113,12 @@ form button{
   top: 0;
   bottom: 0;
   border-radius: 50%;
+}
+
+h4{
+  background-color: red;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 
 }
