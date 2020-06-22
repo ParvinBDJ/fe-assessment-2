@@ -101,3 +101,13 @@ form button{
     border: 5px solid #fff;
   }
 }
+
+.cursor{
+  border: solid 5px #fff;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
