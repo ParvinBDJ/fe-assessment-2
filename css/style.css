@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f19044;
   cursor: none;
   margin: 0;
@@ -105,7 +105,7 @@ form button{
   }
 }
 
-.cursor{
+.cursor {
   border: solid 5px #fff;
   width: 25px;
   height: 25px;
@@ -115,7 +115,7 @@ form button{
   border-radius: 50%;
 }
 
-h4{
+h4 {
   background-color: red;
   display: block;
   text-align: center;
