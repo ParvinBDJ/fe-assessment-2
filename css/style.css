@@ -1,8 +1,13 @@
-body {
-  background-color: #f19044;
+html{
   cursor: none;
-  margin: 0;
 }
+
+body{
+  background-color: #f19044;
+  margin: 0;
+  height: 100vh;
+}
+
 
 [type=radio] { 
     position: absolute;
@@ -65,7 +70,7 @@ h2{
   margin: 20px 0 5px 20px;
 }
 
-#name{
+.name{
   font-size: 400%;
   margin: 10vh 0 8vh 0;
 }
@@ -105,20 +110,37 @@ form button{
   }
 }
 
-.cursor {
+.cursor{
   border: solid 5px #fff;
   width: 25px;
   height: 25px;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   border-radius: 50%;
+  box-sizing: border-box;
 }
 
-h4 {
+h4{
   background-color: red;
   display: block;
   text-align: center;
   margin: 0;
-  padding: 
+  padding: 10px;
+}
+
+span {
+  transition: all 0.4s ease;
+  color: #bf6f36;
+}
+
+span.fade {
+  opacity: 1;
+  color: black;
+}
+
+#error {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1em;
+  color: red;
 }
