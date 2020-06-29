@@ -1,0 +1,189 @@
+:root{
+  --main-color: #ffffff;
+  --accent-color: #fd5068;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-archivo: 'Archivo Black', sans-serif;
+} 
+html{
+  cursor: none;
+  height: 100vh;
+}
+
+body{
+  /* background-color: #f19044; */
+  margin: 0;
+  background-image: linear-gradient(217deg, rgba(250,170,180, 0.6), rgba(253, 80, 104, 0) 70.71%),
+  linear-gradient(127deg, rgba(234, 48, 244, 0.6), rgba(197, 13, 206, 0) 70.71%),
+  linear-gradient(336deg, rgba(113, 53, 254, 0.6), rgba(0,0,255,0) 70.71%);
+}
+
+.background {
+  background: linear-gradient(217deg, rgba(250,170,180, 0.6), rgba(253, 80, 104, 0) 70.71%),
+  linear-gradient(127deg, rgba(234, 48, 244, 0.6), rgba(197, 13, 206, 0) 70.71%),
+  linear-gradient(336deg, rgba(113, 53, 254, 0.6), rgba(0,0,255,0) 70.71%), 
+  url('https://images.squarespace-cdn.com/content/v1/56fa5d948259b56d9b43be18/1552309519687-WKN6HGL5XSXMI9FLE160/ke17ZwdGBToddI8pDm48kKv-OxgJk5ZEkr1XImx37Up7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7qPQqbemtvxnexGpaY1WoblMcOFUcNbf9QQ_hQ7Y60vGQ/20131027_YOUNGLOVE_SAM%26EMMA_0242.jpg?format=3000000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+[type=radio] + img {
+    cursor: pointer;
+  }
+  
+[type=radio]:checked + img {
+    width: 22%;
+    border: 10px solid var(--main-color);
+  }
+
+label img {
+   transition: ease 0.3s;
+   width: 20%;
+   margin: 2vw;
+   border: 5px solid #fce0cd;
+}
+form{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  margin: 10px;
+  font-size: 5vw;
+  color: var(--accent-color);
+}
+
+h3{
+  font-family: var(--font-raleway);
+  text-align: center;
+  margin: 0 0 5vh 0;
+  color: var(--main-color);
+}
+
+label button{
+  display: block;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  font-size: 1em;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+#add {
+  display: block;
+  margin: 20px 0 5px 20px;
+}
+
+.name{
+  font-family: 'Questrial', sans-serif;
+  font-size: 8vw;
+  margin: 30vh 0 2vh 0;
+  color: var(--main-color);
+}
+
+label input[type='text']{
+  border: none;
+  border-radius: 2em;
+  padding: 1.4vh;
+  margin: 0 auto 10px auto;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+form button{
+  border: none;
+  padding: 1.4vh;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  font-family: var(--font-archivo);
+  border-radius: 2em;
+}
+
+
+@media only screen and (max-width: 580px) {
+
+  h1{
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+    color: var(--accent-color);
+  }
+  
+
+  label img {
+    border: 2px solid var(--main-color); 
+    width: 38%
+  }
+  [type=radio]:checked + img {
+    width: 42%;
+    border: 5px solid var(--main-color);
+  }
+}
+
+.cursor{
+  border: solid 5px var(--main-color);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+h4{
+  background-color: red;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+span {
+  transition: all 0.4s ease;
+  opacity: 0.5;
+  color: var(--accent-color);
+}
+
+span.fade {
+  opacity: 1;
+  color: var(--main-color);
+}
+
+#error {
+  font-family: var(--font-archivo);
+  font-size: 1em;
+  color: #ff9fac;
+}
+
+h5{
+  margin: 0 0 4vh 0;
+  text-align: center;
+  font-family: var(--font-raleway);
+  color: var(--main-color);
+} 
+
+h5:first-of-type {
+  margin: 0;
+}
+
+label {
+  color: var(--accent-color);
+  font-family: var(--font-raleway);
+}

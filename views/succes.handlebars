@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- cursor -->
+    <noscript>
+        <h4>Please enable your javascript</h4>
+        <style type="text/css">
+            .cursor { display: none; }
+            html { cursor: auto; }
+        </style>
+    </noscript>
+    <div class='cursor'></div>  
+
+    <h1 id='fade'>{{ info.name }}, your choices are:</h1>
+    <h3>1: {{ info.movieChoice1 }}</h3>
+    <h3>2: {{ info.movieChoice2 }} </h3>
+ 
+    <form class='next' action="/delete" method="POST">
+    <label for="delete"><h2>Would you like to delete your account?</h2>
+    <button>Delete</button>
+    </label>
+    </form>
+
+    <form class='next' action="/cookieRemovie" method="POST">
+    <label for="remove"><h2>Would you like to logout (Remove session)?</h2>
+    <button>Log Out</button>
+    </label>
+    </form>
+    <script src="js/java.js"></script>
+</body>
+</html>

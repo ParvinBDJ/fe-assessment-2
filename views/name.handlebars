@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is your name?</title>
+</head>
+<body class="background">
+    <!-- cursor -->
+    <noscript>
+    <h4>Please enable your javascript</h4>
+    <style type="text/css">
+        .cursor { display: none; }
+        html { cursor: auto; }
+    </style>
+    </noscript>
+    <div class='cursor'></div>
+
+    <h1 class="name" id='fade'>What is your name?</h1>
+    <h5>By filling in you name you can than fill in your movie preferences.</h5>
+    <h5>After filling in your movie preferences you can start the dating! </h5>
+    <form action="/name" method='POST' id="nameform">
+
+    <label for="firstname">
+    <input type='text' name='firstname' id='firstname' required>
+    </label>
+    <button type='submit'>Submit</button>
+    <p id="error"></p>
+    </form>
+    
+    <script src="js/java.js"></script>
+</body>
+</html>

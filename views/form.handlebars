@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- cursor -->
+    <noscript>
+        <h4>Please enable your javascript</h4>
+        <style type="text/css">
+            .cursor { display: none; }
+            html { cursor: auto; }
+        </style>
+    </noscript>
+    <div class='cursor'></div>  
+
+    <h1 id="fade">Hey, {{ info.name }}!</h1>
+    <h3> Which movie do you like the best?</h3>
+    <form id="form" method="POST" action="/volgendeFilm-succes">
+    <label for="movie1">
+        <input type="radio" id="movie1" name='movie' value="The Lighthouse">
+        <img src="img/lighthouse.jpg" alt="The Lighthouse movie poster">
+    </label>
+    <label for="movie2">
+        <input type="radio" id="movie2" name='movie' value="The Shining">
+        <img src="img/shining.jpg" alt="The Shining movie poster">
+    </label>
+
+    <label for="movie3">
+    <input type="radio" id="movie3" name='movie' value="Get Out">
+    <img src="img/getout.jpg" alt="Get Out movies poster">
+    </label>
+
+    <label for="button">
+        <button>Submit</button>
+    </label>
+    </form>
+    
+    <script src="js/java.js"></script>
+</body>
+</html>
